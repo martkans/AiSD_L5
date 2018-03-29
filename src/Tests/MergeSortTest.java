@@ -3,7 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MergeSortTest {
 
     @org.junit.jupiter.api.Test
-    void mergeSort() {
+    void sortTest() {
         assertThrows(NullPointerException.class, () -> MergeSort.mergeSort(null));
 
         assertArrayEquals(new int[]{1,2,3,5,6,7,43}, MergeSort.mergeSort(new int[] {3,2,1,7,6,43,5}));
